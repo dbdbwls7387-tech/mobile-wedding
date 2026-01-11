@@ -4,40 +4,58 @@
   <meta charset="UTF-8">
   <title>We’re getting married</title>
 
-  <!-- 썸네일 -->
+  <!-- 카톡 썸네일 -->
   <meta property="og:title" content="We’re getting married">
-  <meta property="og:description" content="장난 모바일 청첩장">
-  <meta property="og:image" content="thumb.jpg">
+  <meta property="og:description" content="모바일 청첩장">
+  <meta property="og:image" content="https://dbdbwls7387-tech.github.io/mobile-wedding/xxx.jpg">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dbdbwls7387-tech.github.io/mobile-wedding/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
     body {
       margin: 0;
-      font-family: serif;
+      background: #ffffff;
+      font-family: 'Times New Roman', serif;
       text-align: center;
-      background: #fff;
     }
-    .title {
-      margin-top: 40vh;
+
+    .intro {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      animation: fadeIn 2s ease;
+    }
+
+    .intro h1 {
       font-size: 32px;
-      animation: fadeIn 2s;
+      margin-bottom: 24px;
     }
-    img {
+
+    .photo {
       width: 90%;
       max-width: 420px;
-      margin-top: 30px;
-      animation: fadeIn 3s;
+      opacity: 0;
+      animation: fadeIn 2s ease forwards;
+      animation-delay: 1.5s;
     }
+
     @keyframes fadeIn {
       from { opacity: 0; }
       to { opacity: 1; }
     }
   </style>
 </head>
+
 <body>
 
-  <div class="title">We’re getting married</div>
-  <img src="photo.jpg">
+  <div class="intro">
+    <h1>We’re getting married</h1>
+    <img class="photo" src="xxx.jpg" alt="wedding photo">
+  </div>
 
 </body>
 </html>
